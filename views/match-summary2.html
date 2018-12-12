@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+
+			<div class="row">
+				<div class="col-sm-4 col-xs-6 col-md-4">
+				
+		                <h3 style="text-align: center;color:#ff0000">Team Name:{{ matchsum2.Team1}}</h3>
+						<h4 style="text-align: center;color:#ff0000">Team Code: {{ matchsum2.Code1 }}</h4>
+						<h5 style="text-align: center;color:#ff0000"> Goals Scored : {{ matchsum2.Score1 }}</h5>
+					    <img ng-src = "img/{{ matchsum2.Code1| lowercase}}.png" alt="team-logo" heigth="70" width="70" class="img-responsive">
+					</div>
+						
+					<div class="col-sm-4 col-xs-6 col-md-4 text-center">
+						
+						<h3> {{ matchsum2.Day }}({{matchsum2.Date}})</h3>
+			            <span><img src = "img/epl.png" alt="team-logo" heigth="100" width="100" class="img-responsive"></i></span>
+					
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-4">
+					
+					    <h3 style="text-align: center;color:#ff0000">Team Name:{{ matchsum2.Team2 }}</h3>
+						<h4 style="text-align: center;color:#ff0000">Team Code: {{ matchsum2.Code2 }}</h4>
+						<h5 style="text-align: center;color:#ff0000">Goals scored : {{ matchsum2.Score2 }}</h5>
+						<img ng-src = "img/{{ matchsum2.Code2 | lowercase }}.png" alt="team-logo" heigth="70" width="70" class="img-responsive">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-8">
+						<h2 class="text-center">Result:{{ matchsum2.Won }}</h2>
+					</div>
+					
+				</div>
+</body>
+</html>
